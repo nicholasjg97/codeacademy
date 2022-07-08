@@ -21,3 +21,19 @@ let lostDollar = 50;
 
 gainedDollar++;
 lostDollar--;
+
+// Create a variable named favoriteAnimal and set it equal to your favorite animal.
+// Use console.log() to print 'My favorite animal: ANIMAL' to the console. Use string concatenation so that ANIMAL is replaced with the value in your favoriteAnimal variable.
+
+var favoriteAnimal = "dog";
+console.log('My favorite animal:' + favoriteAnimal);
+
+// Create a variable called myName and assign it your name.
+// Create a variable called myCity and assign it your favorite city’s name.
+// Use a single template literal to interpolate your variables into the sentence below. Use console.log() to print your sentence to the console in the following format:
+
+// My name is NAME. My favorite city is CITY.
+
+var myName = "Nico";
+var myCity = 'Houston';
+console.log(`My name is ${myName}. My favorite city is ${myCity}`);
