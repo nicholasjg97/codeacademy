@@ -37,3 +37,13 @@ console.log('My favorite animal:' + favoriteAnimal);
 var myName = "Nico";
 var myCity = 'Houston';
 console.log(`My name is ${myName}. My favorite city is ${myCity}`);
+
+// Use console.log() to print the typeof newVariable.
+// Great, now let’s check what happens if we reassign the variable. Below the console.log() statement, reassign newVariable to 1.
+// Since you assigned this new value to newVariable, it has a new type! On the line below your reassignment, use console.log() to print typeof newVariable again.
+
+let newVariable = 'Playing around with typeof.';
+
+console.log(typeof newVariable);
+newVariable = 1;
+console.log(typeof newVariable);
