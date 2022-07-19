@@ -88,3 +88,22 @@ console.log(typeof newVariable);
 // let newton = celsius * (33 / 100);
 // newton = Math.floor(newton);
 // console.log(`The temperature is ${newton} degrees Newton.`)
+
+/* 
+    Dogs mature at a faster rate than human beings. We often say a dog’s age can be calculated in “dog years” to account for their growth compared to a human of the same age. In some ways we could say, time moves quickly for dogs — 8 years in a human’s life equates to 45 years in a dog’s life. How old would you be if you were a dog?
+
+    Here’s how you convert your age from “human years” to “dog years”:
+
+    The first two years of a dog’s life count as 10.5 dog years each.
+    Each year following equates to 4 dog years.
+*/
+
+var myAge = 25;
+// My age as of today
+let earlyYears = 2;
+// first 2 years of dog
+earlyYears = 2 * 10.5;
+// first two years of dogs life
+let laterYears = myAge - 2;
+// taking two years from age for early years
+laterYears = laterYears * 4;
