@@ -26,3 +26,35 @@ if (hungerLevel > 7) {
 } else {
   console.log('We can eat later!');
 }
+
+// Let’s create an if...else statement that checks if mood is 'sleepy' and tirednessLevel is greater than 8.
+// If both conditions evaluate to true, then console.log() the string 'time to sleep'. Otherwise, we should console.log() 'not bed time yet'.
+
+let mood = 'sleepy';
+let tirednessLevel = 6;
+
+if (mood === 'sleepy' && tirednessLevel > 8) {
+  console.log('time to sleep');
+} else {
+  console.log('not bed time yet')
+}
+
+// Change the value of wordCount so that it is truthy. This value should still be a number.
+// Change the value of favoritePhrase so that it is still a string but falsy.
+
+let wordCount = 5;
+
+if (wordCount) {
+  console.log("Great! You've started your work!");
+} else {
+  console.log('Better get to work!');
+}
+
+
+let favoritePhrase = '';
+
+if (favoritePhrase) {
+  console.log("This string doesn't seem to be empty.");
+} else {
+  console.log('This string is definitely empty.');
+}
