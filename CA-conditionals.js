@@ -58,3 +58,34 @@ if (favoritePhrase) {
 } else {
   console.log('This string is definitely empty.');
 }
+
+// Assign to writingUtensil the value of tool and if tool is falsy, assign a default value of 'pen'.
+
+let tool = 'marker';
+
+// Use short circuit evaluation to assign  writingUtensil variable below:
+let writingUtensil = tool || 'pen';
+// What if we reassign the value of tool to 'marker'. Let’s see what happens to the value of writingUtensil.
+
+console.log(`The ${writingUtensil} is mightier than the sword.`);
+
+
+// Refactor, or edit, the first if...else block to use a ternary operator.
+// Refactor the second if...else block to use a ternary operator.
+// Refactor the second if...else block to use a ternary operator.
+
+let isLocked = false;
+
+isLocked ? console.log('You will need a key to open the door.') 
+: console.log('You will not need a key to open the door.');
+
+let isCorrect = true;
+
+isCorrect ? console.log('Correct!') 
+: console.log('Incorrect!');
+
+
+let favoritePhrase = 'Love That!';
+
+favoritePhrase === 'Love That!' ? console.log('I love that!')
+: console.log("I don't love that!");
