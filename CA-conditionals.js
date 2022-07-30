@@ -89,3 +89,41 @@ let favoritePhrase = 'Love That!';
 
 favoritePhrase === 'Love That!' ? console.log('I love that!')
 : console.log("I don't love that!");
+
+// Let’s add an else if statement that checks if season is equal to 'winter'.
+// Add another else if statement that checks if season is equal to 'fall'
+// Add a final else if statement that checks if season is equal to 'summer'
+
+let season = 'summer';
+
+if (season === 'spring') {
+  console.log('It\'s spring! The trees are budding!');
+} else if (season === 'winter') {
+  console.log('It\'s winter! Everything is covered in snow.');
+} else if (season === 'fall') {
+  console.log('It\'s fall! Leaves are falling!');
+} else if (season === 'summer') {
+  console.log('It\'s sunny and warm because it\'s summer!');
+} else {
+  console.log('Invalid season.');
+}
+
+// Let’s write a switch statement to decide what medal to award an athlete.
+// The first case checks for the value 'first place'. The second case checks for the value 'second place'. The third case checks for the value 'third place'.
+// Now, add a default statement at the end of the switch that uses console.log() to print 'No medal awarded.'.
+
+let athleteFinalPosition = 'first place';
+switch (athleteFinalPosition) {
+  case 'first place':
+  console.log('You get the gold medal!');
+  break;
+  case 'second place':
+  console.log('You get the silver medal!');
+  break;
+  case 'third place':
+  console.log('You get the bronze medal!');
+  break;
+  default:
+  console.log('No medal awarded.');
+  break;
+}
