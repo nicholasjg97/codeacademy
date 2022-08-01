@@ -170,3 +170,34 @@ switch (randomNumber) {
   break;
 }
 console.log(eightBall);
+
+
+// Codecademy’s annual race is just around the corner! This year, we have a lot of participants. You have been hired to write a program that will register runners for the race and give them instructions on race day.
+
+/* Race number:
+Early adults receive a race number at or above 1000.
+All others receive a number below 1000.
+Start time:
+
+Adult registrants run at 9:30 am or 11:00 am.
+Early adults run at 9:30 am.
+Late adults run at 11:00 am.
+Youth registrants run at 12:30 pm (regardless of registration). */
+
+let raceNumber = Math.floor(Math.random() * 1000);
+
+var registeredEarly = true;
+var runnersAge = 15;
+
+if (registeredEarly && runnersAge > 18) {
+  raceNumber += 1000;
+}
+if (registeredEarly && runnersAge > 18) {
+  console.log(`Runner ${raceNumber}, you will run at 9:30 am.`)
+} else if (!registeredEarly && runnersAge > 18) {
+  console.log(`Runner ${raceNumber}, you will run at 11:00 am.`)
+} else if (runnersAge < 18) {
+  console.log(`Runner ${raceNumber}, you will run at 12:30 pm.`)
+} else if (runnersAge === 18) {
+  console.log('Please see the front desk!')
+}
