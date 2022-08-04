@@ -28,3 +28,25 @@ function sayThanks(name) {
     console.log('Thank you for your purchase ' + name + '! We appreciate your business.');
   }
   sayThanks('Cole')
+
+//   Change the parameters of makeShoppingList() into default parameters :
+
+// Assign ‘milk’ as the default value of item1.
+// Assign ‘bread’ as the default value of item2.
+// Assign ‘eggs’ as the default value of item3.
+
+function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
+    console.log(`Remember to buy ${item1}`);
+    console.log(`Remember to buy ${item2}`);
+    console.log(`Remember to buy ${item3}`);
+  }
+
+//   Declare a function monitorCount() that has two parameters. The first parameter is rows and the second parameter is columns.
+// Let’s compute the number of monitors by multiplying rows and columns and then returning the value.
+// Declare a variable named numOfMonitors using the const keyword and assign numOfMonitors the value of invoking monitorCount() with the arguments 5 and 4
+
+function monitorCount(rows, columns) {
+    return rows * columns;
+  }
+  const numOfMonitors = monitorCount(5, 4);
+  console.log(numOfMonitors)
