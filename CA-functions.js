@@ -50,3 +50,43 @@ function monitorCount(rows, columns) {
   }
   const numOfMonitors = monitorCount(5, 4);
   console.log(numOfMonitors)
+
+//   Below monitorCount Create a function declaration named costOfMonitors that has two parameters, the first parameter is rows and the second parameter is columns.
+// Add a return statement that returns the value of calling monitorCount(rows, columns) multiplied by 200.
+// Declare a variable named totalCost using the const keyword. Assign to totalCost the value of calling costOfMonitors() with the arguments 5 and 4 respectively.
+
+function costOfMonitors (rows, columns) {
+    return monitorCount(rows, columns) * 200;
+  }
+  const totalCost = costOfMonitors(5, 4);
+  console.log(totalCost)
+
+
+//   Create a variable named plantNeedsWater using the const variable keyword.
+// Assign an anonymous function that takes in a parameter of day to plantNeedsWater.
+// In the function body add an if conditional that checks day === 'Wednesday'. If the conditional is truthy, inside the if code block, use the return keyword to return true.
+// Add an else statement after the if statement. Inside the else statement use the return keyword to return false.
+// Call the plantNeedsWater() and pass in 'Tuesday' as an argument.
+
+const plantNeedsWater = function (day) {
+    if (day === 'Wednesday') {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  
+  plantNeedsWater('Tuesday')
+  console.log(plantNeedsWater('Tuesday')
+  )
+
+//   Change plantNeedsWater() to use arrow function syntax.
+
+// const plantNeedsWater = (day) => {
+//     if (day === 'Wednesday') {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   };
+  
