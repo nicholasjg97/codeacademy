@@ -20,3 +20,22 @@ for (let counter = 5; counter < 11; counter++) {
   for (let counter = 3; counter >= 0; counter--) {
     console.log(counter)
   }
+
+
+//   Write a for loop that iterates through our vacationSpots array using i as the iterator variable.
+const vacationSpots = ['Bali', 'Paris', 'Tulum'];
+
+for (let i = 0; i < vacationSpots.length; i++) {
+  console.log('I would love to visit ' + vacationSpots[i]);
+}
+
+'Jason'];
+var tinasFollowers = ['Maria', 'Jim', 'Joe'];
+var mutualFollowers = []
+for (let i = 0; i < bobsFollowers.length; i++) {
+  for (let i = 0; i < tinasFollowers.length; i++) {
+    if (bobsFollowers[i] === tinasFollowers) {
+      mutualFollowers.push(tinasFollowers[i]);
+    }
+  }
+}
