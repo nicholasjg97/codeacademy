@@ -12,3 +12,26 @@ const checkThatTwoPlusTwoEqualsFourAMillionTimes = () => {
 const isTwoPlusTwo = checkThatTwoPlusTwoEqualsFourAMillionTimes;
 isTwoPlusTwo();
 console.log(isTwoPlusTwo.name);
+
+
+// declare two variables: checkA and checkB:
+// checkA stores the sum val plus 2.
+// checkB stores the invocation of the func callback, with val as the argument.
+// write a conditional statement that checks if the value of checkA is equal to the value checkB. If true, return the result of the callback function. If false, return the string 'inconsistent results'.
+// Finally, using console.log(), log the invocation of checkConsistentOutput() with two arguments: the addTwo() function and any number.
+
+const addTwo = num => {
+    return num + 2;
+  }
+  
+  const checkConsistentOutput = (func, val) => {
+    var checkA = val + 2;
+    var checkB = func(val);
+    if (checkA === checkB) {
+      return func(val)
+    } else {
+      return 'inconsistent results';
+    }
+  }
+  
+  console.log(checkConsistentOutput(addTwo, 8));
