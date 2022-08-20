@@ -35,3 +35,21 @@ const startsWithS = animals.findIndex(letter => {
   return letter[0] === 's';
 })
 
+
+// To start, declare a new variable named newSum using the const keyword. Assign to newSum the value of calling .reduce() on newNumbers. You don’t need to provide any arguments to .reduce() yet.
+// Provide .reduce with an argument of a callback function. The callback function has two parameters. The first parameter is accumulator and the second parameter is currentValue.
+// To check the value being used as we iterate through the array, add three statements to the function body of the callback:
+
+// console.log('The value of accumulator: ', accumulator);
+// console.log('The value of currentValue: ', currentValue);
+// a return statement that adds accumulator to currentValue.
+// Log the value of newSum to the console to see the return value of calling .reduce() on newNumbers.
+// Add a second argument of 10 to .reduce().
+
+const newNumbers = [1, 3, 5, 7];
+const newSum = newNumbers.reduce((accumulator, currentValue) => {
+  console.log('The value of accumulator: ', accumulator);
+console.log('The value of currentValue: ', currentValue);
+return accumulator + currentValue;
+console.log(newSum);
+}, 10)
