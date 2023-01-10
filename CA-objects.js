@@ -153,3 +153,60 @@ for (let crewRole in spaceship.crew) {
 for (let memberName in spaceship.crew) {
   console.log(`${spaceship.crew[memberName].name}: ${spaceship.crew[memberName].degree}`)
 }
+
+
+// add a property of model and assign to it a value of '1E78V2'. Add another property, energyLevel and assign to it a value of 100.
+// Inside the robot object, add a method named provideInfo. Inside the body of provideInfo(), return the following string by using interpolation:
+
+// I am MODEL and my current energy level is ENERGYLEVEL. 
+
+// Replace ‘MODEL’ and ‘ENERGYLEVEL’ with the calling object’s model and energyLevel property.
+
+// Log the result of calling .provideInfo() method on robot to the console.
+
+const robot = {
+  model: '1E78V2',
+  energyLevel: 100,
+  provideInfo() {
+    return `I am ${this.model} and my current energy level is ${this.energyLevel}`
+  }
+};
+console.log(robot.provideInfo())
+
+/*
+
+Currently the .checkEnergy() method is not producing the correct output because it is using arrow function syntax.
+
+Refactor, or change, the method to use a function expression. You can write the function using either longhand or shorthand format.
+
+After refactoring the method, notice that .checkEnergy() has access to the other internal properties of the robot object.
+*/
+
+const robot = {
+  energyLevel: 100,
+  checkEnergy() {
+    console.log(`Energy is currently at ${this.energyLevel}%.`)
+  }
+}
+
+robot.checkEnergy();
+
+// In robot, create a getter method named energyLevel using the get keyword.
+// Inside the getter method, add an if statement to check if this._energyLevel is a number using the typeof operator. If that condition is truthy, return 'My current energy level is ENERGYLEVEL'. Replace ENERGYLEVEL with the value of this._energyLevel.
+// Add an else statement that returns 'System malfunction: cannot retrieve energy level'.
+// Log the result of calling the getter method energyLevel on robot to the console.
+
+const robot = {
+  _model: '1E78V2',
+  _energyLevel: 100,
+  get energyLevel() {
+    if (typeof this._energyLevel === 'number') {
+      return `My current energy level is ${this._energyLevel}`
+    } else {
+      return 'System malfunction: cannot retrieve energy level'
+    }
+  }
+};
+console.log(robot.energyLevel)
+
+
