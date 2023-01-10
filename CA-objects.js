@@ -209,4 +209,73 @@ const robot = {
 };
 console.log(robot.energyLevel)
 
+// Add a setter method named numOfSensors using the set keyword. Provide a parameter of num. Leave the function body empty for now.
+// Add a check to see if num is a number using the typeof operator.
+// num should also be greater than or equal to 0.
+// If both conditions are met, reassign this._numOfSensors to num.
+// Now add an else that logs 'Pass in a number that is greater than or equal to 0' to the console.
+// Use the numOfSensors setter method on robot to assign _numOfSensors to 100.
+// To check that the setter method worked, console.log() robot.numOfSensors.
 
+const robot = {
+  _model: '1E78V2',
+  _energyLevel: 100,
+  _numOfSensors: 15,
+  get numOfSensors(){
+    if(typeof this._numOfSensors === 'number'){
+      return this._numOfSensors;
+    } else {
+      return 'Sensors are currently down.'
+    }
+  },
+  set numOfSensors(num) {
+    if (typeof num === 'number' && num >= 0) {
+      this._numOfSensors = num;
+    } else {
+      return 'Pass in a number that is greater than or equal to 0';
+    }
+  }
+  
+};
+robot.numOfSensors = 100;
+console.log(robot.numOfSensors);
+
+// Create a factory function named robotFactory that has two parameters model and mobile. Make the function return an object. In the object, add a key of model with the value of the model parameter. Add another property that has a key of mobile with a value of the mobile parameter.
+
+// Then add a method named beep without a parameter that will log 'Beep Boop' to the console.
+// Let’s now check what tinCan can do! Call .beep() on tinCan.
+
+const robotFactory = (model, mobile) => {
+  return {
+    model: model,
+    mobile: mobile,
+    beep() {
+      console.log('Beep Boop');
+    }
+  }
+}
+const tinCan = robotFactory ('P-500', true)
+tinCan.beep()
+
+
+//-------Destructuring 
+
+const robot = {
+  model: '1E78V2',
+  energyLevel: 100,
+  functionality: {
+    beep() {
+      console.log('Beep Boop');
+    },
+    fireLaser() {
+      console.log('Pew Pew');
+    },
+  }
+};
+
+// Use destructured assignment to create a const variable named functionality that extracts the functionality property of robot.
+// \Since functionality is referencing robot.functionality we can call the methods available to robot.functionality simply through functionality.
+
+// Take advantage of this shortcut and call the .beep() method on functionality.
+const { functionality } = robot
+functionality.beep()
